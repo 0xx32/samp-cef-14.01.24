@@ -1,0 +1,1 @@
+export const inventoryIconUrl = 'https://projecta.myarena.site/static/images/'

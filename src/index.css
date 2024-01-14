@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    user-select: none;
+}
+*:focus {
+    outline: none !important;
+    border: none !important;
+}
+
+input:focus,
+input {
+    outline: none;
+    border: none;
+}
+button,
+button:active,
+button:focus {
+    background: none;
+    border: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "GT Eesti Pro Display", sans-serif;
+    color: #fff;
+    font-weight: 400;
+    line-height: 1;
+    overflow: hidden;
+}
+
+.log-wrapper-btn {
+    position: absolute;
+    top: -0;
+    right: 0;
+    z-index: 100;
+}
+
+.btn-log {
+    background-color: rgb(21, 21, 201);
+    padding: 6px 14px;
+    color: #fff;
+    margin: 10px ;
+    font-size: 18px;
+    border-radius: 7px;
+
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.logText {
+    position: absolute;
+    top: -100%;
+    right: 100px;
+    background-color: rgba(23, 23, 44, 0.37);
+    padding: 20px;
+    font-size: 16px;
+    z-index: 99;
+    color: #fff;
+    border-radius: 12px;
+    opacity: 0;
+
+    .rowlog {
+        color: red;
+        padding-bottom: 4px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #ffffff8f;
+        
+    }
+    .flex {
+        display: flex;
+        gap: 10px;
+    }
+}
+
+.open-log {
+    top: 8px;
+    opacity: 1;
+    transition: top 0.4s ease, opacity 0.4s ease-in-out;
+}
+
+.none {
+    display: none;
+}

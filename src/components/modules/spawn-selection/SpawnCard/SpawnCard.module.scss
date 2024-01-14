@@ -1,0 +1,84 @@
+.card {
+    position: relative;
+    padding: 64px 22px 24px 22px;
+    width: 350px;
+    height: 520px;
+
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: radial-gradient(
+        50% 50% at 50% 50%,
+        rgba(255, 255, 255, 0.2) 0%,
+        rgba(181, 181, 181, 0.2) 100%
+    );
+
+    .block {
+        margin-bottom: 30px;
+        margin-top: auto;
+    }
+
+    .lable {
+        position: absolute;
+        top: 14px;
+        left: 13px;
+        min-width: 140px;
+        padding: 8px 16px;
+        border-radius: 5px;
+        border: 1px solid #f3ce95;
+        background: radial-gradient(
+            50% 50% at 50% 50%,
+            #f2cd95 0%,
+            #b2895f 100%
+        );
+        text-align: center;
+        color: #262626;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        user-select: none;
+    }
+    .imgWrap {
+        margin-bottom: 48px;
+        text-align: center;
+    }
+    .text {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: normal;
+        opacity: 0.5;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        user-select: none;
+    }
+    .button {
+        width: 100%;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 20px 0;
+        border-radius: 5px;
+        color: #262626;
+        border: 1px solid #f3ce95;
+        background: radial-gradient(
+            50% 50% at 50% 50%,
+            #f2cd95 0%,
+            #b2895f 100%
+        );
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        user-select: none;
+
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.6;
+            transition: opacity 0.2s ease-in-out;
+        }
+    }
+}

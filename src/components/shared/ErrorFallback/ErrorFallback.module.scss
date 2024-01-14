@@ -1,0 +1,16 @@
+.root {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: black;
+   color: #fff;
+   z-index: 99;
+
+   button {
+      background-color: green;
+      color: #fff;
+      padding: 6px 10px;
+   }
+}

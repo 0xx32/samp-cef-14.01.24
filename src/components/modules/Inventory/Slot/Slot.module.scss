@@ -1,0 +1,37 @@
+.slot {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    width: 105px;
+    height: 105px;
+    // padding-top: 22px;
+    // padding-bottom: 9px;
+
+    border-radius: 5px;
+    background: radial-gradient(
+        82.04% 82.04% at 50% 50%,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.1) 100%
+    );
+}
+
+.active {
+   
+
+    background: radial-gradient(
+        82.04% 82.04% at 50% 50%,
+        rgba(249, 213, 155, 0.25) 0%,
+        rgba(176, 120, 73, 0.25) 100%
+    );
+}
+
+.forbidden {
+    background: rgba(204, 30, 30, 0.541) !important;
+}
+
+.resolve {
+    background: rgba(136, 161, 206, 0.534) !important;
+    transition: background 0.2s ease-in-out;
+}

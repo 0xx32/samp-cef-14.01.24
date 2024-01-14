@@ -1,0 +1,43 @@
+.wrapper {
+    min-height: 100vh;
+    padding-top: 100px;
+
+    .notFound {
+        width: 400px;
+        margin: 0 auto;
+        margin-top: 200px;
+    }
+    .notFoundImage {
+        text-align: center;
+    }
+
+    .notFoundText {
+        margin-top: 22px;
+        color: #fff;
+        text-align: center;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .btnWrapper {
+        margin-top: 40px;
+        text-align: center;
+    }
+    .backBtn {
+        margin-top: 15px;
+        color: #fff;
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        opacity: 0.3;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.8;
+            transition: opacity 0.2s ease-in-out;
+        }
+    }
+}

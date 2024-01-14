@@ -1,0 +1,31 @@
+.statusWrapp {
+    position: relative;
+
+    width: 76px;
+    height: 76px;
+
+    .statusRingCircle {
+        transform-origin: center;
+       transform: rotate(90deg);
+        transition: stroke-dashoffset 0.3s;
+        z-index: 2;
+    }
+
+    .icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.value {
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+    font-family: Akrobat, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+    text-transform: uppercase;
+}

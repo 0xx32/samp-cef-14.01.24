@@ -1,0 +1,145 @@
+.wrapper {
+    min-height: 100vh;
+    padding-top: 186px;
+
+    .block {
+        display: flex;
+        flex-direction: column;
+        width: 465px;
+        margin: 0 auto;
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    }
+
+    .logoWrapper {
+        margin-bottom: 30px;
+        text-align: center;
+
+        img {
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            pointer-events: none;
+        }
+    }
+    .subTitle {
+        margin-bottom: 30px;
+    }
+    .inputBox {
+        display: flex;
+        margin-bottom: 20px;
+        column-gap: 10px;
+
+        input {
+            height: 70px;
+            flex: 1;
+            padding: 20px 24px 16px 15px;
+
+            border-radius: 5px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            background: radial-gradient(
+                50% 50% at 50% 50%,
+                rgba(255, 255, 255, 0.2) 0%,
+                rgba(181, 181, 181, 0.2) 100%
+            );
+
+            color: #fff;
+            font-family: GT Eesti Pro Display;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            &::placeholder {
+                font-size: 18 px;
+                opacity: 0.5;
+            }
+
+            &:focus {
+                border: 1px solid #f3ce95;
+            }
+        }
+    }
+    .inputIcon {
+        width: 70px;
+        height: 70px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .formBtn {
+        height: 80px;
+        width: 100%;
+
+        color: #262626;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        border-radius: 5px;
+        border: 1px solid #f3ce95;
+        background: radial-gradient(
+            50% 50% at 50% 50%,
+            #f2cd95 0%,
+            #b2895f 100%
+        );
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.8;
+            transition: opacity 0.2s ease-in-out;
+        }
+    }
+
+    .backBtn {
+        margin-top: 15px;
+        color: #fff;
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        opacity: 0.3;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.8;
+            transition: opacity 0.2s ease-in-out;
+        }
+    }
+
+    .errorMessage {
+        gap: 14px;
+        margin-top: -10px;
+        margin-bottom: 14px;
+
+        text-align: center;
+        color: red;
+    }
+
+    .close {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        padding: 8px 16px;
+        font-size: 16px;
+        color: #000;
+        cursor: pointer;
+        background: radial-gradient(
+            50% 50% at 50% 50%,
+            #f2bf95 0%,
+            #d64e2c 100%
+        );
+        border-radius: 3px;
+
+        &:hover {
+            opacity: 0.8;
+            transition: opacity 0.2s ease-in-out;
+        }
+    }
+}
