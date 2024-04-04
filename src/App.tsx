@@ -1,13 +1,15 @@
+import { lazy } from "react";
 import { ErrorBoundary } from "react-error-boundary";
 
-import Auth from "components/A-screens/auth/Auth";
-import CharacterSelection from "components/A-screens/character-selection/CharacterSelection";
-import SpawnSelection from "components/A-screens/spawn-selection/SpawnSelection";
-import Inventory from "components/A-screens/inventory/Inventory";
 import { ErrorFallback } from "components/shared/ErrorFallback/ErrorFallback";
 
 import { useAuthEvents } from "hooks/useAuthEvents";
 import { useInventoryEvents } from "hooks/useInventoryEvents";
+
+const CharacterSelection = lazy(() => import("components/A-screens/character-selection/CharacterSelection"));
+const Inventory = lazy(() => import("components/A-screens/inventory/Inventory"));
+const SpawnSelection = lazy(() => import("components/A-screens/spawn-selection/SpawnSelection"));
+const Auth = lazy(() => import("components/A-screens/auth/Auth"));
 
 function App() {
 	const authEvents = useAuthEvents();
