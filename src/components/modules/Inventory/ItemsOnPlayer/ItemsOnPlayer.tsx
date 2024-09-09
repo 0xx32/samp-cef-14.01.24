@@ -13,42 +13,42 @@ import backpackIcon from "assets/inventory/icons/backpack-2.svg";
 import { GearSlot } from "./GearSlot/GearSlot";
 
 interface IProps {
-    setModal: (state: IModalState) => void;
+	setModal: (state: IModalState) => void;
 }
 
 export const ItemsOnPlayer1: FC<IProps> = ({ setModal }) => {
-    const { playerGear } = useInventoryStore((state) => state);
+	const { playerGear } = useInventoryStore((state) => state);
 
-    return (
-        <div className={styles.wornItems}>
-            <InventoryTitle
-                title="Инвентарь персонажа"
-                subTitle="В инвентаре можно управлять вашими предметами"
-                img={backpackIcon}
-                classNames={styles.header}
-            />
+	return (
+		<div className={styles.wornItems}>
+			<InventoryTitle
+				title="Инвентарь персонажа"
+				subTitle="В инвентаре можно управлять вашими предметами"
+				img={backpackIcon}
+				classNames={styles.header}
+			/>
 
-            <h2 className={styles.title}>Надетая одежда</h2>
+			<h2 className={styles.title}>Надетая одежда</h2>
 
-            <div className={styles.grid}>
-                {playerGear.map((item) =>
-                    item.itemData ? (
-                        <GearSlot key={item.gearSlotId} slotid={item.slotId}>
-                            <GearItem
-                                item={item.itemData}
-                                setModal={setModal}
-                                slotId={item.slotId}
-                                gearSlotId={item.gearSlotId}
-                                slotType={item.slotType}
-                            />
-                        </GearSlot>
-                    ) : (
-                        <GearSlot key={item.gearSlotId} slotid={item.slotId} classNames={styles.slot}>
-                            <GearSlotDefault icon={item.icon} name={item.name} />
-                        </GearSlot>
-                    )
-                )}
-            </div>
-        </div>
-    );
+			<div className={styles.grid}>
+				{playerGear.map((item) =>
+					item.itemData ? (
+						<GearSlot key={item.gearSlotId} slotid={item.slotId}>
+							<GearItem
+								item={item.itemData}
+								setModal={setModal}
+								slotId={item.slotId}
+								gearSlotId={item.gearSlotId}
+								slotType={item.slotType}
+							/>
+						</GearSlot>
+					) : (
+						<GearSlot key={item.gearSlotId} slotid={item.slotId} classNames={styles.slot}>
+							<GearSlotDefault icon={item.icon} name={item.name} />
+						</GearSlot>
+					)
+				)}
+			</div>
+		</div>
+	);
 };

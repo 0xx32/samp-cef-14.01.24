@@ -1,35 +1,19 @@
 .inventory {
-    position: relative;
-    min-height: 100vh;
-    padding-top: 80px;
-    padding-left: 130px;
-    background-repeat: no-repeat;
-    background-size: cover;
+	position: relative;
+	min-height: 100vh;
+	padding-top: 80px;
+	padding-left: 130px;
+	background-repeat: no-repeat;
+	background-size: cover;
 
-    &::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
+	background: transparent;
+	backdrop-filter: blur(5px);
 
-        background: linear-gradient(
-            90deg,
-            #212121 0%,
-            rgba(33, 33, 33, 0.83) 73.17%,
-            rgba(33, 33, 33, 0.41) 100%
-        );
-        z-index: 1;
-    }
+	.main {
+		position: relative;
+		z-index: 23;
 
-    .main {
-        position: relative;
-        z-index: 23;
-
-        display: flex;
-        column-gap: 60px;
-    }
-
-   
+		display: flex;
+		column-gap: 60px;
+	}
 }

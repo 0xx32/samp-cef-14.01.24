@@ -117,15 +117,3 @@ export const useVehicleId = create<IVehicleIdState>()(
     }))
 );
 
-interface ILogState {
-    log: string;
-    setLog: (log: string) => void;
-}
-
-export const useLog = create<ILogState>()(
-    //@ts-ignore
-    devtools((set) => ({
-        log: "null",
-        setLog: (log: string) => set((_state) => ({ log })),
-    }))
-);
